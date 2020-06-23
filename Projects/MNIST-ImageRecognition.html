@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - MNIST Image Recognition</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../Portfolio.html">Portfolio</a></li>
+        <li><a href="../Resume.html">Resume</a></li>
+        <li><a href="../Fun.html">Fun</a></li>
+        <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">MNIST Image Recognition</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>Using the MNIST dataset and Scikit-learn, I created an image recognition machine learning model in Python that gets a 97% f1 score.</p>
+            <a href="https://github.com/RollingFire/MNIST-ImageRecognition" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Image Recognition</li>
+                <li>MNIST</li>
+                <li>Scikit-learn</li>
+                <li>Data Augmentation</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Things Learned</p>
+              <ul class="projectList">
+                <li>ML is not infallible</li>
+                <li>Trial and error</li>
+                <li>Humans and computers classify different</li>
+                <li>Sometimes less is more</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>97% f1 score</li>
+                <li>Data augmentation</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Challenges</p>
+              <ul class="projectList">
+                <li>3s vs 5s</li>
+                <li>4s vs 9s</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grayContainer">
+          <div class="projectStory">
+            <p>Machine learning is one of the biggest things that drew me to computer programing. I saw it as a powerful tool that could be used to improve productivity, but more importantly, improve the quality of life for all of society.</p>
+            <p>This was my first machine learning (ML) project that I dove deep into. Projects before this was “simple” as I didn’t work with the data like I did this time. This time, I devoted time into improving and tinkering to get an optimal result. As I am still getting into ML, I only had a few models under my belt. The two that worked the best for me were Random Forest and K-Nearest-Neighbored (KNN). KNN worked the best on the initial data by a half a present, but it took hours to train so I opted for the Random Forest model so that I could train it multiple times in a reasonable amount of time to allow myself to experiment.</p>
+            <p>Once I had the model, I started tinkering with the data. I did both data augmentation and feature engineering. There were numerous ideas that I tried along with numerous failed attempts to improve the results. The first thing that I did was create shifted duplicates of each training image. I shifted the image up, down, left, and right 1 pixel and added them to the training data which improved the results. I tried 2 pixels, but that didn’t work and made things worse. After looking at what it was getting wrong, I noticed that it had issues with 9s. It would classify 9s as other numbers like 0s and 8s, and other numbers as 9s. I decided to add a feature that would, in theory, be the number of closed circles that is in the number. To do this, I would create another algorithm that would provide that information. The problem that I ran into was that 4s can be written open of closed, and some of the 2s in the data had loops for the bottom. Despite these two things, it still helped prediction. This feature ended up being scrapped because the counting of the closed circles was unreliable and had a large error amount of error that decreased the accuracy of the number recognition.</p>
+            <p>The next problem that I had was with 3s being classified as 5s and vice versa. I settled on attempting to figure out a side to side activation ratio. I figured 5s would be balanced, where 3s would be a little heavier on the right side. The difference ended up being too small to make a difference to the prediction. On top of that, the shifting images made it so that the right shifted 5s were heavier on the right side than the original 3s. Removing the shifted images proved more damaging than not using the ratio, so ratio was removed.</p>
+            <p>I wanted to improve the predictions more, but I was running out of ideas. I was looking through the images when I noticed that some had faint attaching lines between parts. For example, the top line on a 5 being barely attached. With my experience with photograph, I thought about the exposure of the image. So, I shifted the entire photo lighter and darker. This helped make the model less sensitive. </p>
+            <p>Funny story, I was using cross validation and when I added the exposure shifting of ± 10, the model increased its score a whole percent. So, I added shifts of ± 20 on top of that which took it up another percent to 99.9%. At that point I thought something was up. I realized that I was removing the point of cross validation because I am inflating the data with the same image. It was training and testing on the same data which skewed the results. It still helped the actual test data when moderated, but not to 99% levels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

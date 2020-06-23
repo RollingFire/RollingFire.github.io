@@ -1,0 +1,158 @@
+h2 {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.funContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.whiteContainer, .whiteSwapContainer, .grayContainer, .graySwapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: calc(50% - 46px);
+  max-width: calc(50% - 46px);
+  padding: 20px;
+  border: 3px solid #27b4db;
+  position: relative;
+  overflow: hidden;
+}
+
+.whiteContainer, .whiteSwapContainer {
+  background-color: #fff;
+}
+
+.grayContainer, .graySwapContainer {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1095px) {
+  .whiteContainer {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .grayContainer {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .whiteSwapContainer {
+    flex: 100%;
+    max-width: 100%;
+    background-color: #ddd;
+  }
+  .graySwapContainer {
+    flex: 100%;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+
+.imageContainerRight, .imageContainerLeft {
+  flex: calc(40% - 20px);
+  max-width: calc(40% - 20px);
+}
+
+.imageContainerRight {
+  padding-left: 20px;
+}
+
+.imageContainerLeft {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1095px) {
+  .imageContainerLeft {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}
+
+.textContainer {
+  flex: 60%;
+  width: 60%;
+  font-size: 22px;
+  text-indent: 22px;
+}
+
+@media screen and (max-width: 650px) {
+  .imageContainerRight, .imageContainerLeft {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin: auto;
+  }
+  .textContainer {
+    flex: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .flex-flip:nth-of-type(1) { order: 2; }
+  .flex-flip:nth-of-type(2) { order: 1; }
+}
+
+.buttonBox {
+  text-indent:0px;
+  text-align:center;
+  padding: 10px;
+}
+
+a.funButton {
+  display: inline-block;
+  border: 3px solid black;
+  padding: 4px;
+  width: 64%;
+  background-color: #ddd
+}
+
+a.funButton:link, a.funButton:visited, a.funButton:hover {
+  font-size: 22px;
+  text-decoration: none;
+  color: #333;
+}
+
+a.funButton:hover {
+  background: rgba(0,0,0,.4);
+  color: #fff;
+}
+
+.instagramButton {
+  height: auto;
+  margin: auto;
+  padding-left: 8px;
+  width: 32px;
+}
+
+#cooking, #travel, #photography, #gardening, #other {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #cooking, #travel, #photography, #gardening, #other {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #cooking, #travel, #photography, #gardening, #other {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #cooking, #travel, #photography, #gardening, #other {
+    top: -128px;
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin: 24px;
+}
+
+.contactContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contactLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: #27b4db;
+  text-decoration: underline;
+}
+
+.contactLink:hover {
+  color: #28669b;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 680px) {
+  .contactLink {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contactLink {
+    text-align: left;
+    padding-left: 25px;
+  }
+}

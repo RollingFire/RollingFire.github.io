@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - Pneumonia Detection</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../Portfolio.html">Portfolio</a></li>
+          <li><a href="../Resume.html">Resume</a></li>
+          <li><a href="../Fun.html">Fun</a></li>
+          <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">Pneumonia Detection</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>Object detection utilizing YOLOv3 and OpenCV to detect pneumonia in a chest scan. Part of the Kaggle RSNA Pneumonia Detection Challenge.</p>
+            <a href="https://github.com/RollingFire/PneumoniaDetection" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Object Detection</li>
+                <li>YOLOv3</li>
+                <li>OpenCV</li>
+                <li>Pandas</li>
+                <li>Pydicom</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Things Learned</p>
+              <ul class="projectList">
+                <li>Object Detection</li>
+                <li>YOLOv3</li>
+                <li>OpenCV</li>
+                <li>Working with dicom files</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>Built a working model that detects pneumonia</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Challenges</p>
+              <ul class="projectList">
+                <li>Hardware limitations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grayContainer">
+          <div class="projectStory">
+            <p>Object detection is one of my interests in machine learning. I used this pneumonia detection challenge as an opportunity to learn object detection.</p>
+            <p>I found a pneumonia detection challenge hosted on Kaggle.com. <a href="https://www.kaggle.com/c/rsna-pneumonia-detection-challenge" target="_blank">https://www.kaggle.com/c/rsna-pneumonia-detection-challenge</a> A stat they was listed on the competition’s page that motivated me to attempt the challenge was that internationally 15% of all deaths of children under the age of 5, is caused by pneumonia.</p>
+            <p>I knew nothing about object detection at the start and so I learned a lot from it. A month into working on the project, my priorities changed, and this project was moved to the back burner.</p>
+            <p>A few months later, I reattempted this challenge with additional knowledge and a new approach. This approach utilized the Darknet and YOLOv3 object detection. <a href="https://pjreddie.com/darknet/yolo/" target="_blank">https://pjreddie.com/darknet/yolo/</a> After 5 days of approximately 8 hours of training a day, the model achieved an F1 score of 0.74 and an average IoU of 64% on the validation set.</p>
+            <p>The model was still improving at the end of the first round of training, so further improvements can be made. For this first round of training, the training and validation sets only contained images that had detection boxes. This was so the model would get to a state where it could detect pneumonia the fastest. Toward the end of the training, I started to notice that the model began to send false positives. So, I believe that the model would benefit from some further training was some images that do not contain pneumonia.</p>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture4.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture3.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture5.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture8.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture7.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture6.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture2.JPG"></div>
+            <div class="projectListSection"><img class="snapshots" src="Images/PneumoniaDetection/Capture9.JPG"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - Integrated Station Dataset Scrapper</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../Portfolio.html">Portfolio</a></li>
+        <li><a href="../Resume.html">Resume</a></li>
+        <li><a href="../Fun.html">Fun</a></li>
+        <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">Integrated Station Dataset Scrapper</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>Downloads, gathers, and condenses data from the Integrated
+              Station Dataset.</p>
+            <a href="https://github.com/RollingFire/IntegratedStationDatasetScrapper" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Python</li>
+                <li>Scrapper</li>
+                <li>FTP</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>Passing functions as parameters</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Challenges</p>
+              <ul class="projectList">
+                <li>Dealing with mistakes in the data</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+            </div>
+          </div>
+        </div>
+        <div class="grayContainer">
+          <div class="projectStory">
+            <p>I was learning about machine learning, and I was looking for a
+              project that I could implement machine learning into. I stumbled
+              across data.gov and saw that there was new data and nearly real
+              time tracking of the US energy production and consumption rates
+              and came up with the idea of making a modle that would predict
+              energy consumption. I was working with the hypothesis that the
+              greatest variance in energy consumption between days would be
+              heating or AC usages. That is determined mainly by the temperature
+              that day. I decided to use the weather as my first input, see how
+              much if any correlation is there, and go from there.</p>
+            <p>I found the Integrated Station Dataset, which are logs of weather
+              stations that log different weather data. I created these packages
+              to download those needed data files, read and save the desired
+              data, and also distill the data so that instead of hourly data, it
+              will give you daily or monthly data condensed by using whatever
+              statistical function you give it.</p>
+            <p>After getting this package finished, I went to start creating the
+              package to get the energy data which I would use to train the
+              machine learning algorithm. I then realized that the energy data
+              is tracked in almost real time, but it is only archived monthly.
+              Or at least monthly was all that I could find archived for
+              download. Monthly data wouldn’t be as useful as daily, and it also
+              wouldn’t give me enough data to train the algorithm. So I decided
+              that I would cancel the larger project, but put the scraper for
+              the Integrated Station Dataset up in my portfolio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

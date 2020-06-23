@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - Dictionary Scraper</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../Portfolio.html">Portfolio</a></li>
+        <li><a href="../Resume.html">Resume</a></li>
+        <li><a href="../Fun.html">Fun</a></li>
+        <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">Dictionary Scraper</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>To soothe my curiosity of which word is
+              used most often to describe words in the dictionary, I created a web
+              scrapper to scrap dictionary.com to find out for me. It turns out
+              that other than words such as 'a', 'in', 'by', 'is', 'the', 'for',
+              etc., the most used words for descriptions on dictionary.com as of
+              4/15/18 are 'especially' and 'person'.</p>
+            <a href="https://github.com/RollingFire/DictionaryScraper" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Python</li>
+                <li>Web Scraping</li>
+                <li>Multithreading</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Things Learned</p>
+              <ul class="projectList">
+                <li>Persistence</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>Found the answer to my question</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Challenges</p>
+              <ul class="projectList">
+                <li>Dealing with request timeouts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="projectGray">
+          <div class="projectStory">
+            <p>This was a fun project for me. For some reason I was curious
+              what word is most used to describe other words. It wasn’t
+              too hard to get it working. The first time I ran it, however, it
+              was painfully slow. Most page requests took about a second,
+              but some would take a few more seconds. Across the entire list of
+              words, I think I estimated that it would take 10 days total. I
+              found that the bottleneck was in the delay in sending and
+              receiving the site requests and not in the data transfer. My solution was
+              to multithread the program to request multiple pages at once so
+              that the bottleneck would be the bandwidth of my internet. With
+              this new configuration it took approximately 11 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

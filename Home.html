@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/HomeStyle.css">
+  <link rel="stylesheet" type="text/css" href="CSS/MainStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <title>Austin Dorsey</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  //Code by Feras Al Sous on Stack overflow.
+      jQuery(function($) {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  if (target.length) {
+                      $('html, body').animate({
+                          scrollTop: target.offset().top
+                      }, 500);
+                      return false;
+                  }
+              }
+          });
+      });
+  </script>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="Fun.html">Fun</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <!--Open Section--->
+    <div class="openBackground">
+      <span id="open"></span>
+      <div class="openArrow">
+        <a href="#intro" class="openArrow">
+          <span class="glyphicon glyphicon-arrow-down"></span>
+        </a>
+      </div>
+      <div class="openContainer">
+        <p>Do something today that will improve your life tomorrow.
+          - Matt Carriker</p>
+      </div>
+    </div>
+
+    <!--Into Section--->
+    <div class="introBackground">
+      <span id="intro"></span>
+      <div class="introContainer">
+        <p>
+          I am a self-taught software engineer. I am most proficient in Python, C++, Java, JavaScript, HTML, and CSS. I’m currently employed with IBM who is contracting me to AT&T as a UI developer. I am interested in an opportunity to work with cutting edge technology while working with team members who write and appreciate well written code.
+        </p>
+      </div>
+    </div>
+
+    <!--Experience Section--->
+    <div class="experienceBackground">
+      <span id="experience"></span>
+      <div class="experienceMainContainer">
+        <h1 class="secondFont">EXPERIENCE</h1>
+        <div class="experienceContainer">
+          <div class="experienceItem">
+            <hr class="experienceItemLine">
+            <div class="experienceItemRow">
+              <div class="experienceFlexItem"><h2 class="experienceJobTitle">Application Developer</h2></div>
+              <div class="experienceFlexItem"><h3 class="experienceDates">June 2019 - Present</h3></div>
+              <div class="experienceFlexItem"><h2 class="experienceCompany">IBM</h2></div>
+              <div class="experienceFlexItem"><h3 class="experienceLocation">Dallas, TX</h3></div>
+            </div>
+            <ul class="experienceDutyContainer">
+              <li>Contracted with AT&T as the sole UI dev on one of their Premier project Scrum teams.</li>
+              <li>Updated, maintained and created new features using JavaScript and JSP.</li>
+              <li>Underwent training in microservice architecture and tools.</li>
+            </ul>
+            <hr class="experienceItemLine">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Certification Section--->
+    <div class="certificationBackground">
+      <span id="certification"></span>
+      <div class="certificationMainContainer">
+        <h1 class="secondFont">CERTIFICATION</h1>
+        <div class="certificationContainer">
+          <div class="certificationItem">
+            <hr class="certificationLine">
+            <ul class="certificationList">
+              <li><h3 class="certificationEntry">Red Hat Certified Specialist in OpenShift Application Developments - August 2019</h3></li>
+              <li><h3 class="certificationEntry">Solidworks Mechanical Design: Associate - February 2017</h3></li>
+              <li><h3 class="certificationEntry">PADI Open Water Diver - August 2014</h3></li>
+            </ul>
+            <hr class="certificationLine">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Portfolio--->
+    <div class="portfolioBackground">
+      <div class="portfolioBackgroundGradient">
+        <span id="portfolio"></span>
+        <div class="portfolioMainTitleContainer">
+          <h1 class="secondFont">PORTFOLIO</h1>
+        </div>
+        <div class="portfolioContainer">
+          <!--1--->
+          <div class="portfolioItemContainer">
+            <div class="portfolioPrimary">
+              <h3 class="portfolioTitle">Pizza Shop Microservice Application</h3>
+              <p class="portfolioDiscription">Spring Boot Microservice application with REST APIs, an Angular Frontend, and a MySQL database of a Pizza Shop or any other restaurant. Provides menus, inventory management, order tracking, customer data, automatic inventory reorder, and a recipe book.</p>
+            </div>
+            <div class="portfolioSecondary">
+              <div class="portfolioLists">
+                <p class="portfolioListHeading">Key Words</p>
+                <ul class="portfolioList">
+                  <li>Java</li>
+                  <li>Angular</li>
+                  <li>Spring Boot</li>
+                  <li>MySQL</li>
+                  <li>Docker</li>
+                </ul>
+                <p class="portfolioListHeading">Successes</p>
+                <ul class="portfolioList">
+                  <li>Integration Testing</li>
+                  <li>Unit Testing</li>
+                  <li>Test Driven Development</li>
+                </ul>
+                <p class="portfolioListHeading">Things Learned</p>
+                <ul class="portfolioList">
+                  <li>Angular</li>
+                  <li>Integration Testing</li>
+                  <li>Unit Testing</li>
+                </ul>
+              </div>
+              <div class="portfolioButtons">
+                <a href="Projects/PizzaShopMicroserviceApplication.html" class="portfolioButton portfolioMoreButton">More</a>
+                <a href="https://github.com/RollingFire/PizzaShopMicroserviceApplication" target="_blank" class="portfolioButton">
+                  <img src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--2--->
+          <div class="portfolioItemContainer">
+            <div class="portfolioPrimary">
+              <h3 class="portfolioTitle">Pneumonia Detection</h3>
+              <p class="portfolioDiscription">Object detection utilizing YOLOv3 and OpenCV to detect pneumonia in a chest scan. Part of the Kaggle RSNA Pneumonia Detection Challenge.</p>
+            </div>
+            <div class="portfolioSecondary">
+              <div class="portfolioLists">
+                <p class="portfolioListHeading">Key Words</p>
+                <ul class="portfolioList">
+                  <li>Object Detection</li>
+                  <li>YOLOv3</li>
+                  <li>OpenCV</li>
+                  <li>Pandas</li>
+                  <li>Pydicom</li>
+                </ul>
+                <p class="portfolioListHeading">Things Learned</p>
+                <ul class="portfolioList">
+                  <li>Object Detection</li>
+                  <li>YOLOv3</li>
+                  <li>OpenCV</li>
+                  <li>Working with dicom files</li>
+                </ul>
+                <p class="portfolioListHeading">Successes</p>
+                <ul class="portfolioList">
+                  <li>Built a working model that detects pneumonia</li>
+                </ul>
+              </div>
+              <div class="portfolioButtons">
+                <a href="Projects/PneumoniaDetection.html" class="portfolioButton portfolioMoreButton">More</a>
+                <a href="https://github.com/RollingFire/PneumoniaDetection" target="_blank" class="portfolioButton">
+                  <img src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolioContainer">
+          <!--3-->
+          <div class="portfolioItemContainer">
+            <div class="portfolioPrimary">
+              <h3 class="portfolioTitle">Android Randomizer App</h3>
+              <p class="portfolioDiscription" style="font-size:1.8em">Allows the user to roll virtual versions of common board game dice or create their own custom dice of both numbers and word. Could be used to recreate a lost custom dice from a game, or to decide on what restaurant to go to.</p>
+            </div>
+            <div class="portfolioSecondary">
+              <div class="portfolioLists">
+                <p class="portfolioListHeading">Key Words</p>
+                <ul class="portfolioList">
+                  <li>Android</li>
+                  <li>Java</li>
+                  <li>Android Studio</li>
+                </ul>
+                <p class="portfolioListHeading">Things Learned</p>
+                <ul class="portfolioList">
+                  <li>Java</li>
+                  <li>Android</li>
+                </ul>
+                <p class="portfolioListHeading">Successes</p>
+                <ul class="portfolioList">
+                  <li>Got a working app that I will use</li>
+                </ul>
+              </div>
+              <div class="portfolioButtons">
+                <a href="Projects/AndroidRandomizerApp.html" class="portfolioButton portfolioMoreButton">More</a>
+                <a href="https://github.com/RollingFire/AndroidRandomizerApp" target="_blank" class="portfolioButton">
+                  <img src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--4--->
+          <div class="portfolioItemContainer">
+            <div class="portfolioPrimary">
+              <h3 class="portfolioTitle">File Backuper</h3>
+              <p class="portfolioDiscription">I use an external hard drive for
+                backups instead of cloud storage because of the slow internet
+                where I live. It is a time-consuming task to back up all the
+                files manually, so I wrote this program that does all the heavy
+                lifting for me. All I have to do now is connect my hard drive
+                and run this program, and the files are backed up for me.</p>
+            </div>
+            <div class="portfolioSecondary">
+              <div class="portfolioLists">
+                <p class="portfolioListHeading">Key Words</p>
+                <ul class="portfolioList">
+                  <li>Python</li>
+                  <li>File Management</li>
+                </ul>
+                <p class="portfolioListHeading">Things Learned</p>
+                <ul class="portfolioList">
+                  <li>Pursue things that you will use</li>
+                  <li>Simplicity and cleanliness of code</li>
+                </ul>
+                <p class="portfolioListHeading">Successes</p>
+                <ul class="portfolioList">
+                  <li>Simple to use</li>
+                </ul>
+              </div>
+              <div class="portfolioButtons">
+                <a href="Projects/FileBackuper.html" class="portfolioButton portfolioMoreButton">More</a>
+                <a href="https://github.com/RollingFire/FileBackuper" target="_blank" class="portfolioButton">
+                  <img src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="GitHub"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="moreButton" href="Portfolio.html">Full Portfolio</a>
+      </div>
+    </div>
+
+    <!--Resume Section--->
+    <div class="resumeBackground">
+      <span id="resume"></span>
+      <div class="resumeMainContainer">
+        <h1 class="secondFont">SKILLS</h1>
+        <div class="resumeContainer">
+          <div class="resumeColumnContainer">
+            <div class="resumeStyle">
+              <h3>Programing Languages</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SQL</li>
+                <li>C++</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resumeColumnContainer">
+            <div class="resumeStyle">
+              <h3>Tools/Frameworks</h3>
+              <ul>
+                <li>Spring</li>
+                <li>REST</li>
+                <li>Docker</li>
+                <li>Angular</li>
+                <li>Junit</li>
+                <li>Maven</li>
+                <li>Android</li>
+                <li>Swagger</li>
+                <li>OpenShift</li>
+                <li>JSP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resumeColumnContainer">
+            <div class="resumeStyle">
+              <h3>Skills</h3>
+              <ul>
+                <li>Independent Learner</li>
+                <li>Fast Learner</li>
+                <li>Trustworthy</li>
+                <li>Attention to Detail</li>
+                <li>Curious</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a class="moreButton" href="Resume.html">Full Resume</a>
+      </div>
+    </div>
+
+    <!--Fun Section--->
+    <div class="funBackground">
+      <span id="fun"></span>
+      <div class="funMainContainer">
+        <h1 class="secondFont">FUN</h1>
+
+        <div class="funContainer">
+          <div class="funItem">
+            <img src="Images/Home/IMG_4049-Edit_Lightroom.jpg" style="width:100%;height:100%">
+            <div class="funSecondary">
+              <a href="Fun.html#photography" class="funButton">Photography</a>
+            </div>
+          </div>
+          <div class="funItem">
+            <img src="Images/Home/PIXNIO-207164.jpg" style="width:100%;height:100%">
+            <div class="funSecondary">
+              <a href="Fun.html#cooking" class="funButton">Cooking</a>
+            </div>
+          </div>
+          <div class="funItem">
+            <img src="Images/Home/PIXNIO-277720.jpg" style="width:100%;height:100%">
+            <div class="funSecondary">
+              <a href="Fun.html#travel" class="funButton">Travel</a>
+            </div>
+          </div>
+        </div>
+        <a class="moreButton funMoreButton" href="Fun.html">More</a>
+      </div>
+    </div>
+
+    <!--Contact Section--->
+    <div class="contactBackground">
+      <div class="portfolioMainTitleContainer">
+        <h1 class="secondFont">GET IN TOUCH</h1>
+      </div>
+      <span id="contact"></span>
+      <div class="contactMainContainer">
+        <a href="mailto:austin_dorsey@hotmail.com" class="contactLink secondFont" style="text-underline-position:under;">Email: austin_dorsey@hotmail.com</a>
+        <a href="https://github.com/RollingFire" class="contactLink secondFont" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/austindorsey/" class="contactLink secondFont" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

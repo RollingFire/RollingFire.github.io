@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - MNIST Image Recognition V2</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../Portfolio.html">Portfolio</a></li>
+          <li><a href="../Resume.html">Resume</a></li>
+          <li><a href="../Fun.html">Fun</a></li>
+          <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">MNIST Image Recognition V2</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>Using the MNIST dataset and TensorFlow, created an image recognition convolutional neural network that got an accuracy of 99.2%.</p>
+            <a href="https://github.com/RollingFire/MNIST-ImageRecognitionV2" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Image Recognition</li>
+                <li>TensorFlow</li>
+                <li>Convolutional Neural Networks</li>
+                <li>MNIST</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Things Learned</p>
+              <ul class="projectList">
+                <li>TensorFlow</li>
+                <li>Convolutional Neural Networks</li>
+                <li>Hyperparameter Tuning</li>
+                <li>Learning Schedules</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>99.2% accuracy score</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Challenges</p>
+              <ul class="projectList">
+                <li>Keeping the model from overfitting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grayContainer">
+          <div class="projectStory">
+            <p>This is my second attempt at the MNIST dataset. My goal this time around was to learn Tensorflow, get experience with convolutional neural networks (CNN), and achieve a 99% or better accuracy. After trying many different architectures, I chose a model that had 3 CNN layers, 2 pooling layers, 2 fully connected layers, and 2 dropout layers. I used the Nesterov Accelerated Gradient optimizer. </p>
+            <p>This model, in addition to data augmentation that grew the training data from 60,000 images to 900,000 images, created a model that achieved an accuracy of 99.2%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

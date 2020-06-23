@@ -1,0 +1,106 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #ddd;
+    color: #333;
+}
+
+nav.navbarContainer {
+  display: block;
+  font-family: "Arial Black", Gadget, sans-serif;
+  background-color: #27b4db;
+  position: fixed;
+  top: 0;
+  border-bottom: 6px solid white;
+  box-shadow: 0px 0px 2px 0px #bbb;
+  width: 100%;
+  z-index: 999;
+}
+
+.navPadding {
+  padding-top: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 60px;
+}
+
+nav li {
+  float: left;
+  padding-top: 4px;
+}
+
+nav li a {
+  font-size: 24px;
+  padding: 10px;
+}
+
+nav a:link, nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #444;
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.navName {
+  float: left;
+  font-size: 36px;
+  margin: auto;
+  color: #444;
+  line-height: 1.1;
+}
+
+.main {
+  padding-top: 86px;
+}
+
+@media screen and (max-width: 1095px) {
+  .main {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .navName {
+    font-size: 28px;
+  }
+  nav li {
+    padding-top: 10px;
+  }
+  nav li a {
+    font-size: 16px;
+  }
+  .main {
+    padding-top: 98px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .main {
+    padding-top: 128px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    padding-top: 163px;
+  }
+}
+
+.secondFont {
+  font-family: "Arial Black", Gadget, sans-serif;
+}

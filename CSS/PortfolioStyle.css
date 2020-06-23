@@ -1,0 +1,58 @@
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolioItemContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 12px;
+  background-color: #ccc;
+  box-shadow: 6px 8px 4px rgba(39, 180, 219, 0.4);
+  border: 1px solid #bbb
+}
+
+.portfolioTextContainer {
+  position: relative;
+  margin: 18px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  height: calc(100% - 60px - 50px);
+}
+
+.portfolioProject {
+  text-align: center;
+  font-size: 26px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.portfolioButtons {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.portfolioButton {
+  border: 3px solid black;
+  width: 40%;
+  text-align: center;
+  padding: 2%;
+}
+
+a.portfolioButton:link, a.portfolioButton:visited {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover.portfolioButton {
+  background: rgba(0,0,0,.6);
+}

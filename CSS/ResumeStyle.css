@@ -1,0 +1,27 @@
+object {
+  position: absolute;
+  top: 86px;
+  width: 100%;
+  height: calc(100vh - 86px);
+}
+
+@media screen and (max-width: 1095px) {
+  object {
+    top: 110px;
+    height: calc(100vh - 110px);
+  }
+}
+
+@media screen and (max-width: 752px) {
+  object {
+    top: 98px;
+    height: calc(100vh - 98px);
+  }
+}
+
+@media screen and (max-width: 567px) {
+  object {
+    top: 128px;
+    height: calc(100vh - 128px);
+  }
+}

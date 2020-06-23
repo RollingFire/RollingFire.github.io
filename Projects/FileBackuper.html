@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/ProjectPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Austin Dorsey - File Backuper</title>
+</head>
+<body>
+  <nav class="navbarContainer">
+    <div class="navPadding">
+      <h1 class="navName">Austin Dorsey</h1>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../Portfolio.html">Portfolio</a></li>
+        <li><a href="../Resume.html">Resume</a></li>
+        <li><a href="../Fun.html">Fun</a></li>
+        <li><a href="../Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="projectMainContainer">
+      <div class="projectContainer">
+        <div class="projectWhite">
+          <h1 class="projectTitle">File Backuper</h1>
+        </div>
+        <div class="projectGray">
+          <div class="projectDiscription">
+            <p>Backs up desired files and folders to the desired locations</p>
+            <a href="https://github.com/RollingFire/FileBackuper" target="_blank" class="github">
+              <div class="githubBlock">
+                <p class="github">GitHub</p>
+                <img src="../Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="github"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="projectWhite">
+          <div class="projectListContainer">
+            <div class="projectListSection">
+              <p>Key Words</p>
+              <ul class="projectList">
+                <li>Python</li>
+                <li>File Management</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Things Learned</p>
+              <ul class="projectList">
+                <li>Pursue things that you will use.</li>
+                <li>Simplicity and cleanliness of code.</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+              <p>Successes</p>
+              <ul class="projectList">
+                <li>Simple to use</li>
+              </ul>
+            </div>
+            <div class="projectListSection">
+            </div>
+          </div>
+        </div>
+        <div class="projectGray">
+          <div class="projectStory">
+            <p>Because of the slow internet where I live, I do not
+              use any cloud computing or storage. I want to keep fairly up to
+              date backups of the important data on my computer, so I use an
+              external hard drive. The problem comes when it is time to back up
+              all the files. I would have to manually find and copy each file,
+              which is time consuming. So, I wrote this program that does all
+              the heavy lifting for me. All I have to do now is connect my hard
+              drive and run this program, and the files are backed up for me.</p>
+            <p>Update 10/26/18 – Added feature to make it possible to exclude
+              additional files and directories using a file placed in the 
+              directory that is being backed up. This feature was needed because
+              was working with machine learning data sets that were in zip
+              files. I needed to unzip them to work with them, but I only wanted
+              to back up the zip file and not the individual uncompressed files.
+              This led to multiple excludes that were filling up the main
+              BackupData.txt file. This feature allows me to have a separate
+              exclude file that can follow the project and keeps the excludes
+              organized.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

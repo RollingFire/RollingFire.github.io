@@ -1,0 +1,816 @@
+/*More Button*/
+a.moreButton:link, a.moreButton:visited {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 20vw;
+  border: 3px solid black;
+  padding: 10px;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.moreButton:hover {
+  background: rgba(0,0,0,.6);
+  color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  a.moreButton:link, a.moreButton:visited {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  a.moreButton:link, a.moreButton:visited {
+    width: 45vw;
+  }
+}
+
+/*Open*/
+.openBackground {
+  background:#ffffff url("../Images/Home/PIXNIO-1902984.jpg") no-repeat 40% 60%;
+  background-size: cover;
+  height: calc(100vh - 86px);
+  overflow: hidden;
+}
+
+#open {
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 1095px) {
+  .openBackground {
+    height: calc(100vh - 110px);
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .openBackground {
+    height: calc(100vh - 98px);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .openBackground {
+    height: calc(100vh - 128px);
+  }
+}
+
+@keyframes openArrowMove {
+  0% {padding-top: 20px;}
+  50% {padding-top: 28px;}
+  100% {padding-top: 20px;}
+}
+
+.openArrow {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  height: 100px;
+  width: 140px;
+  background-color: #444;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 28px;
+  animation-name: openArrowMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+a:link.openArrow, a:visited.openArrow, a:hover.openArrow {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 568px) {
+  .openArrow {
+    width: 100px;
+    height: 70px;
+    font-size: 32px;
+  }
+  @keyframes openArrowMove {
+    0% {padding-top: 14px;}
+    50% {padding-top: 22px;}
+    100% {padding-top: 14px;}
+  }
+}
+
+.openContainer {
+  font-size: 62px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0px 0px 30px #000;
+}
+
+@media screen and (max-width: 2200px) {
+  .openContainer {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .openContainer {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .openContainer {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .openContainer {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .openContainer {
+    font-size: 22px;
+  }
+}
+
+/*Intro*/
+.introBackground {
+  background-color: #bbb;
+  position: relative;
+}
+
+#intro {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #intro {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #intro {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #intro {
+    top: -128px;
+  }
+}
+
+.introContainer {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  padding: 40px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 752px) {
+  .introContainer {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .introContainer {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .introContainer {
+    font-size: 18px;
+  }
+}
+
+/*Expiriance*/
+.experienceBackground {
+  background-color: #fff;
+  position: relative;
+}
+
+#experience {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #experience {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #experience {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #experience {
+    top: -128px;
+  }
+}
+
+.experienceMainContainer {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experienceContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.experienceItem {
+  margin: auto;
+  padding: 0px 20px 15px 20px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+hr.experienceItemLine {
+  border: 1px #333 solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.experienceItemRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experienceFlexItem {
+  flex: 50%;
+}
+
+.experienceCompany {
+  text-align: left;
+  margin: auto;
+}
+
+.experienceLocation {
+  text-align: right;
+  margin: auto;
+}
+
+.experienceJobTitle {
+  text-align: left;
+  margin: auto;
+}
+
+.experienceDates {
+  text-align: right;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .experienceCompany, .experienceLocation, .experienceJobTitle, .experienceDates {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .experienceCompany, .experienceLocation, .experienceJobTitle, .experienceDates {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .experienceFlexItem {
+    flex: 100%;
+  }
+
+  .experienceFlexItem:nth-of-type(1) { order: 1; }
+  .experienceFlexItem:nth-of-type(2) { order: 3; }
+  .experienceFlexItem:nth-of-type(3) { order: 2; }
+  .experienceFlexItem:nth-of-type(4) { order: 4; }
+}
+
+.experienceDutyContainer {
+  text-align: left;
+  padding-left: 45px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .experienceDutyContainer {
+    font-size: 18px;
+  }
+}
+
+
+/*Certification*/
+.certificationBackground {
+  background-color: #bbb;
+  position: relative;
+}
+
+#certification {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #certification {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #certification {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #certification {
+    top: -128px;
+  }
+}
+
+.certificationMainContainer {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certificationContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.certificationItem {
+  margin: auto;
+  padding: 0px 20px 15px 20px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+hr.certificationLine {
+  border: 1px #333 solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.certificationList {
+  text-align: left;
+  font-size: 20px;
+}
+
+.certificationEntry {
+  font-size: 18px;
+  margin: auto;
+}
+
+
+/*Portfolio*/
+.portfolioBackground {
+  background-image: url("../Images/Home/PIXNIO-246755.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolioBackgroundGradient {
+  background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(120,160,255,0.3));
+  padding-bottom: 25px;
+  position: relative;
+}
+
+#portfolio {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #portfolio {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #portfolio {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #portfolio {
+    top: -128px;
+  }
+}
+
+.portfolioMainTitleContainer {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolioItemContainer {
+  position: relative;
+  width: 30%;
+  height: 30vw;
+  overflow: hidden;
+  margin: 30px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1600px) {
+  .portfolioItemContainer {
+    width: 40%;
+    height: 40vw;
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .portfolioItemContainer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolioItemContainer {
+    width: 70%;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .portfolioItemContainer {
+    width: 80%;
+    height: 80vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolioItemContainer {
+      height: 130vw;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .portfolioItemContainer {
+      font-size: 8px;
+    }
+  }
+
+.portfolioPrimary {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+}
+
+.portfolioSecondary {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #ccc;
+}
+
+.portfolioItemContainer:hover .portfolioSecondary {
+  opacity: 1;
+}
+
+.portfolioTitle {
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
+  font-size: 3em;
+}
+
+.portfolioDiscription {
+  font-size: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-indent: 40px;
+}
+
+.portfolioLists {
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.portfolioListHeading {
+  font-size: 1.8em;
+  margin: 5px;
+}
+
+.portfolioList {
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.portfolioButtons {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  height: 50px;
+}
+
+@media screen and (max-width: 567px) {
+  .portfolioItemContainer:hover .portfolioSecondary {
+    opacity: 0;
+  }
+  .portfolioButtons {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.portfolioButton {
+  border: 3px solid black;
+  text-align: center;
+  padding: 2%;
+  width: 40%;
+}
+
+a.portfolioButton:link, a.portfolioButton:visited, a.portfolioButton:hover {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+a.portfolioButton:hover {
+  background: rgba(0,0,0,.6);
+}
+
+img.getHubButton {
+  display: block;
+  margin: auto;
+  border: 3px solid black;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.portfolioMoreButton {
+  padding-top: 6px;
+}
+
+/*Resume*/
+.resumeBackground {
+  background-color: #ddd;
+  position: relative;
+}
+
+#resume {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #resume {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #resume {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #resume {
+    top: -128px;
+  }
+}
+
+.resumeMainContainer {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resumeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.resumeColumnContainer {
+  flex: 32%;
+  max-width: 32%;
+  background-color: #bbb;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 958px) {
+  .resumeColumnContainer {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.resumeStyle {
+  margin: 10px;
+  font-size: 24px;
+}
+
+/*Fun*/
+.funBackground {
+  background-color: #fff;
+  position: relative;
+}
+
+#fun {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #fun {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #fun {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #fun {
+    top: -128px;
+  }
+}
+
+.funMainContainer {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.funContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.funItem {
+  position: relative;
+  flex: 33.333%;
+  max-width: 33.333%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 958px) {
+  .funItem {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.funSecondary {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(153, 153, 153, .65);
+}
+
+.funItem:hover .funSecondary {
+  opacity: 1;
+}
+
+a.funButton {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  min-width: 12vw;
+  padding: 10px;
+  border: 3px solid black;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover.funButton {
+  background: rgba(0,0,0,.6);
+}
+
+@media screen and (max-width: 958px) {
+  a.funButton {
+    min-width: 40vw;
+  }
+}
+
+a.funMoreButton:link, a.funMoreButton:visited {
+  color: inherit;
+}
+
+a.funMoreButton:hover {
+  color: white;
+}
+
+/*Contact*/
+.contactBackground {
+  background-color: #ddd;
+  position: relative;
+}
+
+#contact {
+  position: absolute;
+  top: -86px;
+}
+
+@media screen and (max-width: 1095px) {
+  #contact {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #contact {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact {
+    top: -128px;
+  }
+}
+
+.contactMainContainer {
+  display: block;
+  font-size: 30px;
+  padding: 40px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.contactLink {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  color: #27b4db;
+  text-decoration: underline;
+}
+
+.contactLink:hover {
+  color: #28669b
+}

@@ -1,0 +1,85 @@
+.funContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+  text-indent: 22px;
+  position: relative;
+}
+
+.whiteContainer {
+  flex: 50%;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #27b4db;
+}
+
+.grayContainer {
+  flex: 50%;
+  max-width: 50%;
+  background-color:#bbb;
+  padding: 20px;
+  border: 3px solid #27b4db;
+}
+
+.whiteSwapContainer {
+  flex: 50%;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #27b4db;
+}
+
+.graySwapContainer {
+  flex: 50%;
+  max-width: 50%;
+  background-color:#bbb;
+  padding: 20px;
+  border: 3px solid #27b4db;
+}
+
+@media screen and (max-width: 1095px) {
+  .whiteContainer {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .grayContainer {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .whiteSwapContainer {
+    flex: 100%;
+    max-width: 100%;
+    background-color:#bbb;
+  }
+  .graySwapContainer {
+    flex: 100%;
+    max-width: 100%;
+    background-color: #fff;
+  }
+}
+
+#cooking, #travel, #photography {
+  position: absolute;
+  top: 0px;
+}
+
+@media screen and (max-width: 1095px) {
+  #cooking, #travel, #photography {
+    top: -108px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #cooking, #travel, #photography {
+    top: -98px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #cooking, #travel, #photography {
+    top: -128px;
+  }
+}
