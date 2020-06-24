@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
     <script>
-        window.location = window.location + "Home.html"
+        window.location = window.location.href.split('?')[0] + "Home.html" + (window.location.href.split('?')[1] !== undefined ? "?" + window.location.href.split('?')[1] : "")
     </script>
 </html>
