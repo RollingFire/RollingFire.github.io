@@ -59,6 +59,28 @@
   text-indent: 32px;
 }
 
+.projectDiscriptionText {
+  margin: auto;
+  max-width: 1200px;
+  font-size: 20px;
+  text-indent: 32px;
+}
+
+.projectDiscriptionSection {
+  padding-bottom: 10px;
+}
+
+.porjectButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.porjectButtons {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+}
+
 a.github:link, a.github:visited {
   display: block;
   margin: auto;
@@ -74,14 +96,18 @@ a.github:hover {
   color: white;
 }
 
+img.googlePlay {
+  width: 16vw;
+}
+
 @media screen and (max-width: 1400px) {
-  a.github:link, a.github:visited {
+  a.github:link, a.github:visited, img.googlePlay {
     width: 25vw;
   }
 }
 
 @media screen and (max-width: 958px) {
-  a.github:link, a.github:visited {
+  a.github:link, a.github:visited, img.googlePlay {
     width: 45vw;
   }
 }

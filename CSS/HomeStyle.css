@@ -593,6 +593,11 @@ img.getHubButton {
   padding-top: 6px;
 }
 
+.portfolioGooglePlayButton {
+  padding: 2%;
+  width: 60%;
+}
+
 /*Resume*/
 .resumeBackground {
   background-color: #ddd;
