@@ -1,3 +1,9 @@
+@media screen and (max-width: 350px) {
+  .sectionTitle {
+    font-size: 8vw;
+  }
+}
+
 /*More Button*/
 a.moreButton:link, a.moreButton:visited {
   display: block;
@@ -818,4 +824,10 @@ a.funMoreButton:hover {
 
 .contactLink:hover {
   color: #28669b
+}
+
+@media screen and (max-width: 752px) {
+  .contactLink {
+    font-size: 4vw;
+  }
 }

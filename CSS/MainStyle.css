@@ -18,7 +18,7 @@ nav.navbarContainer {
   top: 0;
   border-bottom: 6px solid white;
   box-shadow: 0px 0px 2px 0px #bbb;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
 }
 
@@ -66,6 +66,7 @@ nav ul {
 
 .main {
   padding-top: 86px;
+  width: 100vw;
 }
 
 @media screen and (max-width: 1095px) {
