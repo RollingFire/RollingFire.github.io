@@ -257,9 +257,10 @@ a:link.openArrow, a:visited.openArrow, a:hover.openArrow {
 }
 
 hr.experienceItemLine {
+  max-width: 940px;
   border: 1px #333 solid;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .experienceItemRow {
@@ -377,9 +378,10 @@ hr.experienceItemLine {
 }
 
 hr.certificationLine {
+  max-width: 940px;
   border: 1px #333 solid;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .certificationList {
